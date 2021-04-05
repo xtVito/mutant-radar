@@ -73,12 +73,6 @@ class GenomeService {
       }
     }
 
-    /* if (/(A|a){4}|(C|c){4}|(G|g){4}|(T|t){4}/g.test(dnaConcat)) {
-      result.set("TYPE", GenomeType.MUTANT);
-    } else {
-      result.set("TYPE", GenomeType.HUMAN);
-    } */
-
     result.set("DNA", dnaConcat);
     return result;
   }
