@@ -22,7 +22,7 @@ What things you need to install the software and how to install them
    ```
 2. Clone the repo
    ```sh
-   git clone https://github.com/xtVito/mutant-radar.git
+   git clone -b master https://github.com/xtVito/mutant-radar.git
    ```
 3. Install NPM packages
    ```sh
