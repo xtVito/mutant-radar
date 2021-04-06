@@ -10,6 +10,7 @@ export const GenomeSchema = joi.object().keys({
         let accepted = DNA_ACCEPTED;
         let val = [...value];
 
+        // Evaluate the array contains only the accepted letters
         for (var i = 0; i < val.length; i++) {
           if (!accepted.includes(val[i].toUpperCase())) {
             return helper.message({ "custom": `"dna" only accepts following letters '${DNA_ACCEPTED.join(',')}'` });
@@ -23,6 +24,7 @@ export const GenomeSchema = joi.object().keys({
     .custom((value, helper) => {
       let size = value.length;
 
+      // Evaluate the array is a NxN size
       for (var i = 0; i < size; i++) {
         if (size !== value[i].length) {
           return helper.message({ "custom": `"dna" matrix size must be NxN` });
