@@ -28,7 +28,7 @@ What things you need to install the software and how to install them
    ```sh
    npm install
    ```
-4. Create `dev.env` into root project and paste the following variables
+4. Create `dev.env` into root projec, paste the following variables and change username/password for yours
    ```env
     PORT = 3000
     TYPEORM_CONNECTION = mysql
